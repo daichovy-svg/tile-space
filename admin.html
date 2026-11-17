@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Tile Space · Product admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="admin-page">
+  <header class="site-header admin-header"><a class="brand" href="index.html"><span class="brand-mark"><i></i><i></i><i></i><i></i></span><span>Tile Space</span></a><div class="admin-header-actions"><span class="admin-label">PRODUCT ADMIN</span><a class="text-link dark-link" href="index.html">Back to site <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></header>
+  <main class="admin-main"><div class="admin-intro"><div><p class="eyebrow">CONTENT / PRODUCT CATALOGUE</p><h1>Keep the collection current.</h1><p>Update the catalogue here for this browser. For the live site, the same data can be connected to a secure hosted CMS when you add a domain.</p></div><div class="admin-actions"><button class="button button-dark" id="saveProducts">Save changes</button><button class="button button-outline" id="resetProducts">Reset demo data</button></div></div>
+    <div class="admin-toolbar"><span id="productCount"></span><button class="text-link dark-link" id="addProduct">+ Add product</button></div>
+    <div class="admin-list" id="adminList"></div>
+    <div class="admin-footer-note"><strong>AI editing</strong><span>You can ask Codex to revise this catalogue later, for example: “Add a new 600 × 1200 mm product to the Stone series.”</span></div>
+  </main>
+  <script src="data.js"></script><script src="admin.js"></script>
+</body>
+</html>

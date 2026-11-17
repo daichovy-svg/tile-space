@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tile Space supplies considered floor tiles for APAC buyers. Explore collections, request a volume quote, and speak with our team." />
+  <title>Tile Space | Floor tiles for considered spaces</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement" id="announcement"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Tile Space home">
+      <span class="brand-mark"><i></i><i></i><i></i><i></i></span>
+      <span>Tile Space</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#collection" data-i18n="navCollection">Collection</a>
+      <a href="#quality" data-i18n="navQuality">Quality</a>
+      <a href="#stories" data-i18n="navStories">Stories</a>
+      <a href="#inquiry" data-i18n="navInquiry">Inquiry</a>
+    </nav>
+    <div class="header-actions">
+      <button class="language-switch" type="button" id="languageToggle" aria-label="Switch language">中</button>
+      <a class="header-whatsapp" href="https://wa.me/8613824369827" target="_blank" rel="noreferrer"><i class="button-icon" data-lucide="message-circle" aria-hidden="true"></i><span data-i18n="talkToUs">Talk to us</span></a>
+      <button class="menu-toggle" type="button" id="menuToggle" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-dark">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">FLOOR TILE / APAC SUPPLY</p>
+        <h1 data-i18n="heroTitle">Grounded in material.<br /><em>Ready for your next space.</em></h1>
+        <p class="hero-lede" data-i18n="heroLede">A focused collection of floor tiles for distributors, designers and project teams across Asia Pacific.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#collection"><span data-i18n="exploreCollection">Explore collection</span><i class="button-icon" data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+          <a class="text-link light-link" href="#inquiry"><span data-i18n="requestQuote">Request a quote</span><i class="button-icon" data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>11</strong><span data-i18n="collections">collections</span></div>
+          <div><strong>APAC</strong><span data-i18n="shippingReady">shipping ready</span></div>
+          <div><strong>01:1</strong><span data-i18n="humanContact">human contact</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Tile application image">
+        <div class="hero-image-frame">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1500&q=85" alt="Warm stone floor in a contemporary interior" />
+        </div>
+        <div class="hero-swatch hero-swatch-a"></div>
+        <div class="hero-swatch hero-swatch-b"></div>
+        <div class="hero-note"><span class="note-dot"></span><span data-i18n="heroNote">Material-led surfaces<br />for everyday architecture</span></div>
+      </div>
+    </section>
+
+    <section class="intro-band section-light">
+      <div class="section-kicker"><span>01</span><span data-i18n="sectionIntro">A clear point of view</span></div>
+      <div class="intro-grid">
+        <h2 data-i18n="introTitle">Tiles that make<br /><em>space feel settled.</em></h2>
+        <div class="intro-copy"><p data-i18n="introCopy">Tile Space brings together durable, adaptable floor tile collections for the people who source, specify and build with confidence.</p><a class="text-link dark-link" href="#quality"><span data-i18n="seeHowWeWork">See how we work</span><i class="button-icon" data-lucide="arrow-down-right" aria-hidden="true"></i></a></div>
+      </div>
+    </section>
+
+    <section class="collection-section section-light" id="collection">
+      <div class="section-heading">
+        <div><div class="section-kicker"><span>02</span><span data-i18n="sectionCollection">The collection</span></div><h2 data-i18n="collectionTitle">Choose your surface.</h2></div>
+        <p data-i18n="collectionCopy">A concise catalogue of floor tiles with the details buyers actually need.</p>
+      </div>
+      <div class="filter-row" id="filterRow" aria-label="Filter collections"></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="collection-footer"><span data-i18n="catalogueNote">Need a full catalogue or project quantity?</span><a class="text-link dark-link" href="#inquiry"><span data-i18n="startInquiry">Start an inquiry</span><i class="button-icon" data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
+    </section>
+
+    <section class="quality-section section-sand" id="quality">
+      <div class="quality-intro"><div class="section-kicker"><span>03</span><span data-i18n="sectionQuality">The details matter</span></div><h2 data-i18n="qualityTitle">Clear information.<br /><em>Fewer surprises.</em></h2><p data-i18n="qualityCopy">From sample selection to final packing, we keep the handover clear for every order.</p></div>
+      <div class="quality-steps">
+        <article><span class="step-number">01</span><h3 data-i18n="qualityOneTitle">Select</h3><p data-i18n="qualityOneCopy">Compare finish, thickness and format before you request a quote.</p></article>
+        <article><span class="step-number">02</span><h3 data-i18n="qualityTwoTitle">Confirm</h3><p data-i18n="qualityTwoCopy">We align quantity, destination and timeline with your project.</p></article>
+        <article><span class="step-number">03</span><h3 data-i18n="qualityThreeTitle">Deliver</h3><p data-i18n="qualityThreeCopy">A clear production and delivery plan keeps your team moving.</p></article>
+      </div>
+    </section>
+
+    <section class="stories-section section-light" id="stories">
+      <div class="section-heading"><div><div class="section-kicker"><span>04</span><span data-i18n="sectionStories">In use</span></div><h2 data-i18n="storiesTitle">Made for the way<br /><em>spaces are used.</em></h2></div><p data-i18n="storiesCopy">Reference the mood, then let the material do the work.</p></div>
+      <div class="story-grid">
+        <article class="story-card story-wide"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=85" alt="Quiet neutral tile in a living space" /><div class="story-overlay"><span data-i18n="storyOneTag">RESIDENTIAL / CALM</span><h3 data-i18n="storyOneTitle">A softer foundation for daily life.</h3></div></article>
+        <article class="story-card"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Textured tile in a modern home" /><div class="story-overlay"><span data-i18n="storyTwoTag">HOSPITALITY / TEXTURE</span><h3 data-i18n="storyTwoTitle">Texture that holds attention.</h3></div></article>
+        <article class="story-card story-tile"><div class="story-tile-inner"><span class="tile-glyph">TS</span><span data-i18n="storyThreeTitle">Specify with confidence.</span><a class="text-link light-link" href="#inquiry"><span data-i18n="talkToTeam">Talk to our team</span><i class="button-icon" data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></article>
+      </div>
+    </section>
+
+    <section class="inquiry-section section-dark" id="inquiry">
+      <div class="inquiry-copy"><div class="section-kicker"><span>05</span><span data-i18n="sectionInquiry">Start a conversation</span></div><h2 data-i18n="inquiryTitle">Tell us what<br /><em>you are building.</em></h2><p data-i18n="inquiryCopy">Share the product, quantity and destination. We will come back with a practical quote.</p><div class="contact-line"><span class="contact-dot"></span><div><strong>WhatsApp</strong><a href="https://wa.me/8613824369827" target="_blank" rel="noreferrer">+86 138 2436 9827</a></div></div><div class="contact-line"><span class="contact-dot"></span><div><strong>Email</strong><a href="mailto:daichovy@gmail.com">daichovy@gmail.com</a></div></div></div>
+      <form class="inquiry-form" id="inquiryForm">
+        <div class="form-row"><label><span data-i18n="formName">Your name</span><input name="name" required placeholder="Jane Lee" /></label><label><span data-i18n="formCompany">Company</span><input name="company" placeholder="Company name" /></label></div>
+        <div class="form-row"><label><span data-i18n="formLocation">Country / city / destination port</span><input name="location" required placeholder="Singapore / Singapore / PSA" /></label><label><span data-i18n="formContact">Email or WhatsApp</span><input name="contact" required placeholder="name@company.com" /></label></div>
+        <label><span data-i18n="formProducts">Products and quantity</span><textarea name="products" rows="4" required placeholder="For example: Mineral 600×600, 2,000 m²"></textarea></label>
+        <label><span data-i18n="formMessage">Anything else we should know?</span><textarea name="message" rows="3" placeholder="Timeline, finish preference, packaging..." ></textarea></label>
+        <button class="button button-accent" type="submit"><span data-i18n="sendInquiry">Send inquiry</span><i class="button-icon" data-lucide="arrow-up-right" aria-hidden="true"></i></button>
+        <p class="form-note" data-i18n="formNote">Your message opens in WhatsApp. You can switch to email if you prefer.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand" href="#top"><span class="brand-mark"><i></i><i></i><i></i><i></i></span><span>Tile Space</span></a><p data-i18n="footerLine">Floor tile sourcing from Guangdong, China.</p><div class="footer-links"><a href="mailto:daichovy@gmail.com">Email</a><a href="https://wa.me/8613824369827" target="_blank" rel="noreferrer">WhatsApp</a><a href="#inquiry" data-i18n="footerInquiry">Inquiry</a></div></div>
+    <div class="footer-bottom"><span>© 2026 Tile Space</span><a href="admin.html" data-i18n="adminLink">Product admin</a><span data-i18n="footerLocation">Guangdong, China</span></div>
+  </footer>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true"><button class="mobile-close" id="mobileClose" aria-label="Close menu"><i data-lucide="x" aria-hidden="true"></i></button><a href="#collection" data-i18n="navCollection">Collection</a><a href="#quality" data-i18n="navQuality">Quality</a><a href="#stories" data-i18n="navStories">Stories</a><a href="#inquiry" data-i18n="navInquiry">Inquiry</a><a class="button button-accent" href="https://wa.me/8613824369827" target="_blank" rel="noreferrer"><span data-i18n="talkToUs">Talk to us</span><i class="button-icon" data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
+
+  <dialog class="product-modal" id="productModal"><button class="modal-close" id="modalClose" aria-label="Close product details"><i data-lucide="x" aria-hidden="true"></i></button><div id="modalContent"></div></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
